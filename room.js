@@ -66,11 +66,15 @@ function init() {
         MIDDLE: THREE.MOUSE.MIDDLE,
         RIGHT: THREE.MOUSE.LEFT
     };	
+	orbitControls.touches = {
+		ONE: THREE.TOUCH.DOLLY_PAN,
+		TWO: THREE.TOUCH.ROTATE
+	}
     orbitControls.addEventListener( 'change', render );
 	orbitControls.enableZoom = true;
 	orbitControls.enablePan = true;
     orbitControls.enableRotate = false;
-    orbitControls.panSpeed = 0.1 ;
+    orbitControls.panSpeed = 0.2 ;
 	orbitControls.maxPolarAngle = Math.PI / 2;
     
 
