@@ -68,6 +68,7 @@ function init() {
     };	
 	orbitControls.touches = {
 		ONE: THREE.TOUCH.PAN,
+		TWO: THREE.TOUCH.DOLLY_PAN
 	}
     orbitControls.addEventListener( 'change', render );
 	orbitControls.enableZoom = true;
